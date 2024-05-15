@@ -47,7 +47,7 @@
     animation: 2.25s ease-out slide_up forwards;
     animation-delay: var(--_line-animation-duration);
     transform: translateY(100%);
-    font-size: 4rem;
+    font-size: 11vh;
     color: hsl(184, 92%, 50%);
     text-shadow: 2px 2px 4px hsl(184, 92%, 25%);
   }
@@ -57,7 +57,7 @@
     }
   
     100% {
-      transform: translateY(0);
+      transform: translateY(6.25%);
     }
   }
   
