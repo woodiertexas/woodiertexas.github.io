@@ -1,0 +1,70 @@
+/* Thanks Prospector for helping me get this working */
+
+.container {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    --_line-animation-duration: 3.1s;
+    padding-left: 15%;
+    padding-right: 15%;
+
+    /*animation: 3s normal fade_out forwards;
+    animation-delay: 10s; */
+  }
+  
+  .hrmove {
+    height: 5px;
+    width: 100%;
+    border-radius: 50px;
+    background-color: hsl(184, 92%, 50%);
+    box-shadow: 0 0 8px 0 hsl(184, 92%, 25%);
+
+    animation: var(--_line-animation-duration) normal stretch;
+    animation-timing-function: cubic-bezier(0, 0, 0.10, 1);
+    animation-delay: -2;
+    z-index: 1;
+  }
+  @keyframes stretch {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .text-container {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .text {
+    animation: 3s normal slide_up forwards;
+    animation-delay: var(--_line-animation-duration);
+    transform: translateY(100%);
+    font-size: 4rem;
+    color: hsl(184, 92%, 50%);
+    text-shadow: 2px 2px 4px hsl(184, 92%, 25%);
+  }
+  @keyframes slide_up {
+    0% {
+      transform: translateY(100%);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fade_out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
