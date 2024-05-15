@@ -7,12 +7,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    --_line-animation-duration: 3.1s;
     padding-left: 15%;
     padding-right: 15%;
 
     /*animation: 3s normal fade_out forwards;
     animation-delay: 10s; */
+
+    --_line-animation-duration: 2.25s;
   }
   
   .hrmove {
@@ -23,7 +24,7 @@
     box-shadow: 0 0 8px 0 hsl(184, 92%, 25%);
 
     animation: var(--_line-animation-duration) normal stretch;
-    animation-timing-function: cubic-bezier(0, 0, 0.10, 1);
+    animation-timing-function: cubic-bezier(0.05, 0.05, 0.25, 1.00);
     animation-delay: -2;
     z-index: 1;
   }
@@ -43,7 +44,7 @@
   }
   
   .text {
-    animation: 3s normal slide_up forwards;
+    animation: 2.25s ease-out slide_up forwards;
     animation-delay: var(--_line-animation-duration);
     transform: translateY(100%);
     font-size: 4rem;
