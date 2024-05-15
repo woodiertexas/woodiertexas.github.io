@@ -17,11 +17,11 @@
   }
   
   .hrmove {
-    height: 5px;
+    height: 0.525vh;
     width: 100%;
     border-radius: 50px;
     background-color: hsl(184, 92%, 50%);
-    box-shadow: 0 0 8px 0 hsl(184, 92%, 25%);
+    box-shadow: 0 0 0.525vh 0 hsl(184, 92%, 25%);
 
     animation: var(--_line-animation-duration) normal stretch;
     animation-timing-function: cubic-bezier(0.05, 0.05, 0.25, 1.00);
@@ -49,7 +49,7 @@
     transform: translateY(100%);
     font-size: 11vh;
     color: hsl(184, 92%, 50%);
-    text-shadow: 2px 2px 4px hsl(184, 92%, 25%);
+    text-shadow: 0.2vh 0.2vh 0.5vh hsl(184, 92%, 25%);
   }
   @keyframes slide_up {
     0% {
