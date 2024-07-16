@@ -1,3 +1,10 @@
+/*
+body {
+    background: url('woodie1.png');
+    background-size: 100%;
+}
+*/
+
 /* Thanks Prospector for helping me get this working */
 
 .container {
@@ -13,7 +20,13 @@
     /*animation: 3s normal fade_out forwards;
     animation-delay: 10s; */
 
-    --_line-animation-duration: 2.25s;
+    --_line-animation-duration: 1.60s;
+    
+    /*
+    animation-delay: calc(--_line-animation-duration + 1.40s);
+    animation: 0.25s normal fade_out;
+    animation-timing-function: fade_out;
+    */
   }
   
   .hrmove {
@@ -44,7 +57,7 @@
   }
   
   .text {
-    animation: 2.25s ease-out slide_up forwards;
+    animation: 1.40s ease-out slide_up forwards;
     animation-delay: var(--_line-animation-duration);
     transform: translateY(100%);
     font-size: 5.30vw;
